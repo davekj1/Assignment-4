@@ -1,0 +1,55 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+#abc{
+  background-color: black;
+  color:white;
+  text-align: center;
+  height:120px;
+}
+
+#abc ul li{
+  float:left;
+  width:20%;
+  text-align: center;
+  list-style: none;
+}
+.photo{
+  
+  width:33%;
+  height: 150px;
+  border-radius: 25px;
+}
+.link{
+  padding:20px;
+  display: inline-block;
+  width: 32%;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+.written{
+  float: left;
+  width: 33%;
+  font-family:Dancing Script;
+}
+#footer{
+  text-align: center;
+  letter-spacing: 10px;
+  color:white;
+  background-color: black;
+  padding:15px;
+}
+#footer p{
+  text-align: center;
+  letter-spacing: 2px;
+  font-size: 0.7em;
+  padding: 10px;
+}
+img{
+  width: 100%;
+}
+.nav-link{
+color:white;
+}
