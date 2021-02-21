@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style3.css">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+  .written{
+    font-family: Dancing Script;
+    text-align: center;
+  }
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+div img{
+  height: 250px;
+}
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+.photo-half{
+  float: left;
+  width:50%;
+  padding:20px;
+}
+.text-half{
+  float:left;
+  width:50%;
+  padding: 20px;
+  text-align: center;
+}
+.photo-frame{
+  float:left;
+  width:33%;
+  padding:20px;
+ }
+</style>
+</head>
+<body>
+<div id="abc">
+  
+  <h2><div>Pyramid Travels</div></h2><br>
+  <u><div>The Travel Club for hotel lovers</div></u><br>
+  <ul>
+  <li><a class="nav-link" href="destination.html">Explore Places</li>
+  <li><a class="nav-link" href="booking.html">Book a trip</a></li>
+  <li><a class="nav-link" href="sign_in.html">Sign in and register</a></li>
+  <li><a class="nav-link" href="contact.html">Contact Us</li>
+  <li><a class="nav-link" href="about_us.html">About Us</li>
+  </ul>
+</div>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="https://cms.luxurysociety.com/media/images/28_the-palm-962785_1920_RmklWTx.2e16d0ba.fill-960x540.jpg" style="width:100%">
+  <div class="text">Luxurious hotels</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="https://specials-images.forbesimg.com/imageserve/5ec567daf2098c0006c6036e/960x0.jpg?fit=scale" style="width:100%">
+  <div class="text">Hotels with beaches</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="https://static.toiimg.com/photo/51107660.cms" style="width:100%">
+  <div class="text">Five star hotels</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+<script src="prac4.js">
+</script>
+<a  class="link" style="display: inline-block; width:32% ;box-sizing:border-box;" href="https://www.mrandmrssmith.com/why-book-with-us?merch=homepageAPAC_BOBS"><img class="photo" style="width: 100%"  src="https://sb.monetate.net/img/1/981/2318001.jpg"></a>
+<a class="link" style="display: inline-block;width: 32%;box-sizing: border-box;" href="https://www.mrandmrssmith.com/collections/best-holiday-destinations?merch=homepageAPAC_BOBS"><img class="photo" style="width:100%" src="https://sb.monetate.net/img/1/981/3247651.jpg"></a>
+<a class="link" style="display: inline-block;box-sizing: border-box;width: 32%" href="https://www.mrandmrssmith.com/search/flexible-cancellation/australasia/hotels?merch=homepageAPAC_BOBS"><img class="photo" style="width:100%" src="https://sb.monetate.net/img/1/981/2765479.jpg"></a>
+<div class="written">Why book with pyramid</div>
+<div class="written">Discover best picks of 2021</div>
+<div class="written">Change your stay at last minute</div>
+<p><h2 style="font-family: sans-serif;text-align: center;position: relative;top:20px;">Popular Searches</h2></p><br><br>
+<a class="link" href="https://www.swisshotels.com/" style="display: inline-block;width: 32%;box-sizing: border-box;"<div><img class="photo" style="width: 100%" src="https://mostuniquehotels.com/uploads/hotel-villa-honegg_1.jpeg"></a>
+<a class="link" href="https://www.tripadvisor.in/Tourism-g187275-Germany-Vacations.html" style="display: inline-block;width: 32%;box-sizing: border-box;"><img style="width:100%" class="photo" src="https://i0.wp.com/theluxurytravelexpert.com/wp-content/uploads/2018/02/HEADER2.jpg?fit=1600%2C900&ssl=1"></a>
+<a class="link" href="https://www.tripadvisor.in/Tourism-g187275-Germany-Vacations.html" style="display: inline-block;width: 32%;box-sizing: border-box;"><img  style="width:100%" class="photo" src="https://www.h-hotels.com/_Resources/Persistent/01a400d0047f4b7599631797fc27ceabf9e68db3/aussenansicht-nacht-03-h4-hotel-berlin-alexanderplatz-2400x1113.jpg"></a>
+<div class="written">Fabulous Swiss hotels</div>
+<div class="written">Unique hotels in germany</div>
+<div class="written">H4 hotels in germany</div>
+<a href="https://uttarakhandtourism.gov.in/destination/kailash-mansarovar/" style="display: inline-block;width: 32%;box-sizing: border-box;"><img class="photo" style="width: 100%" src="https://images.livemint.com/img/2019/04/09/600x338/kailash_mansarovar_1554803730453.JPG"></a>
+<a class="link" href="https://www.tajmahal.gov.in/day-tours.aspx#:~:text=Full%20Day%20Tour%20%3A%20(Visit%20Taj,Mahal%2C%20guest%20can%20pay%20Rs.&text=550%2F%2D%20each%20for%20Indian%20Nationals%20%26%20Rs." style="display: inline-block;width: 32%;box-sizing: border-box;"><img class="photo" style="width: 100%" src="https://cdn.britannica.com/86/170586-050-AB7FEFAE/Taj-Mahal-Agra-India.jpg"></div>
+<a class="link" href="https://www.viktoriapalacehotel.com/" style="display:inline-block;width:32%;"><img class="photo" style="width:100%;margin-left: 7px;" src="https://in.musafir.com/SFImage/Images/st-pauls-cathedral---kolkata.jpg"></a>
+<div class="written">Mansarovar</div>
+<div class="written">Tajmahal</div>
+<div class="written">Viktoria palace</div>
+<a class="link" href="https://www.nps.gov/moru/index.htm" ><img class="photo" src="https://www.touropia.com/gfx/d/tourist-attractions-in-the-usa/mount_rushmore.jpg?v=1" style="width:100%"></a>
+<a class="link" href="https://www.tripadvisor.in/Hotels-g60763-New_York_City_New_York-Hotels.html "><img style="width:100%" class="photo" src="https://media-cdn.tripadvisor.com/media/photo-s/18/4a/f4/11/hotel.jpg"></a>
+<a class="link" href="https://www.tripadvisor.in/Hotels-g60763-New_York_City_New_York-Hotels.html "><img class="photo" style="width: 100%" src="https://imageproxy.themaven.net//https%3A%2F%2Fwww.history.com%2F.image%2FMTY1MTc1MTk3ODI0MDAxNjA5%2Ftopic-statue-of-liberty-gettyimages-960610006-promo.jpg"></a>
+<div class="written">Mount Rushmore</div>
+<div class="written">New york hotels"</div>
+<div class="written">Statue of Liberty</div>
+<p><h2 style="font-family: sans-serif;text-align: center;position: relative;top:20px;">Latest Pyramid exclusive offers</h2></p><br><br>
+<a class="link" href="https://www.mrandmrssmith.com/login?return=/luxury-hotels/eagles-villas/offers/50205/50205-smith-exclusive-summer-2021-35-offer-with-free-half-board" style="width:49%; height: 20%"><img class="photo-half" style="width: 100%;" src="https://d3e7bfg0h5jt4g.mrandmrssmith.com/images/426x319/4045030-aldea-canzul-tulum-mexico.jpg"></a>
+<a class="link" href="https://www.mrandmrssmith.com/login?return=/luxury-hotels/olea-all-suite-hotel/offers/52994/52994-smith-exclusive-25-off-stays-of-two-nights-or-more"
+style="width:49%;height: 20%"><img class=" photo-half"src="https://d3e7bfg0h5jt4g.mrandmrssmith.com/images/426x319/4821056-eagles-palace-hotel-ouranoupolis-halkidiki-greece.jpg" style="width: 100%"></a>
+<div class="text-half">Tulum,Mexico<p><h2>Aldea Canzul</h2></p></div>
+<div class="text-half">Haldeeki,Greece<p><h2>Eagles Palace</h2></p></div>
+<div class="text-half" style="color:red;font-size: 0.8em">
+50% off in booking at least 60 days in advance</div>
+<div class="text-half" style="color:red;font-size:0.8em">
+23% off stays</div>
+<p><h2 style="font-family: sans-serif;text-align: center;position: relative;top:20px;">Pyramid Collection</h2></p><br><br>
+<div>
+<img  class="photo-half" src="https://content.r9cdn.net/res/images/marble/seo_hotels.jpg?v=aeb8c67f83d5b9fd53ca97055fc8402800bf3ce4&cluster=4" style="width:66%"></div>
+<div>
+<img class="photo" src="https://d3e7bfg0h5jt4g.mrandmrssmith.com/images/698x522/2945298-great-john-street-manchester-uk.jpg" style="height:8% ;border-radius:0px">
+<div class="written" style="font-size:1.5em;width: 66%">Hotels available for book</div>
+<div class="written" style="font-size:1.5em">Budget Boutique Hotels</div>
+<div ><img class="photo-frame"src="https://www.ohotelsindia.com/pune/images/big_c555f54844e7c751029398ab2422e980_thumb.jpg"></div>
+  <div ><img class="photo-frame"src="https://upload.wikimedia.org/wikipedia/commons/9/92/Backyardpool.jpg" >
+</div>
+<div ><img class="photo-frame"src="https://keyassets-p2.timeincuk.net/wp/prod/wp-content/uploads/sites/62/2019/11/Best-dog-friendly-hotels-UK-e1578068414422-920x517.jpg" >
+  <div class="written" style="font-size: 1.5em">Spa Hotels</div>
+<div class="written" style="font-size: 1.5em">Private pools</div>
+<div class="written" style="font-size: 1.5em">Pet friendly hotels</div>
+</div>
+<div ><img class="photo-frame"  src="https://cdn.hanatravel.com/Pages/Pages_23032020001409.jpg"></div>
+<div><img class="photo-half"style="width: 66%" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/almhof-exterior-1570742516.png?crop=0.630xw:1.00xh;0.270xw,0&resize=640:*"></div>
+<div class="written" style="font-size: 1.5em">Wheelchair accessible hotels</div>
+<div class="written" style="font-size: 1.5em;width: 66%">Ski Hotels</div>
+
+<a href="destination.html"><button type="button" style="background-color: red;color:white;padding:10px;position: relative;top:20px;left:45%">Show More</button></a>
+<br><br><br><br><br>
+<div id="footer">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <i style="font-size:2em;"class="fa fa-facebook-official" aria-hidden="true"></i>
+  <i style="font-size:2em;"class="fa fa-linkedin-square" aria-hidden="true"></i>
+  <i style="font-size: 2em;"class="fa fa-instagram" aria-hidden="true"></i>
+  <br><br>
+  <p  >Support . Info . Marketing</p>
+  <p>Terms of Use . Privacy .</p>
+</div>
+</body>
+
+</html> 
