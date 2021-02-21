@@ -1,0 +1,41 @@
+nav{
+	background-color: black;
+	color:white;
+	text-align:center;
+	padding: 10px;
+}
+#booking{
+	font-family: sans-serif;
+	padding:20px;
+}
+#booking h2{
+	text-align: center;
+}
+span{
+	color: red;
+}
+#retainer div:hover{
+opacity: 80%;
+}
+.terms{
+	padding:50px;
+}
+#submit{
+	position: relative;
+	left:45%;
+	padding: 10px;
+	background-color: red;
+}
+#abc{
+  background-color: black;
+  color:white;
+  text-align: center;
+  height:120px;
+}
+
+#abc ul li{
+  float:left;
+  width:20%;
+  text-align: center;
+  list-style: none;
+}
